@@ -16,9 +16,9 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 				dataType : 'json',
 				colModel :[ 
 					{display : 'Photo',name : 'product_photo',width : 114,sortable : false,align : 'center'}, 
-					{display : 'Material Name',name : 'pur_material_name',width : 124,sortable : true,align : 'center'}, 
-					{display : 'Description',name : 'pur_description',width : 145,sortable : true,align : 'left'},
-					{display : 'Supplier',name : 'item_description',width : 138,sortable : false,	align : 'left',hide : false}, 
+					{display : 'Material Name',name : 'item_name',width : 124,sortable : true,align : 'center'}, 
+					{display : 'Description',name : 'item_description',width : 145,sortable : true,align : 'left'},
+					{display : 'Supplier',name : 'supplier_name',width : 138,sortable : false,	align : 'left',hide : false}, 
 					{display : 'Purchase Address',name : 'supplier_address',width : 138,sortable : false,	align : 'left',hide : false}, 
 					{display : 'Price',name : 'pur_price',	width : 75,sortable : false,align : 'center'},
 					{display : 'Quantity',name : 'pur_quantity',	width : 75,sortable : false,align : 'center'},
@@ -35,7 +35,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 					{separator : true}
 				],
 				searchitems : [ 
-					{display : 'Material Name',name : 'pur_material_name',isdefault : true}, 
+					// {display : 'Material Name',name : 'pur_material_name',isdefault : true}, 
 					{display : 'Purchase Date',name : 'pur_date'}, 
 					{display : 'Receiving Date',name : 'pur_receive_date'}
 				],

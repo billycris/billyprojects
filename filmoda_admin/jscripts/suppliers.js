@@ -13,7 +13,7 @@
 				url :'action/display_suppliers.php',
 				dataType : 'json',
 				colModel :[ 
-					{display : 'Supplier Code',name : '	supplier_code',width : 138,sortable : false,align : 'center'}, 
+					{display : 'Supplier Code',name : 'supplier_code',width : 138,sortable : false,align : 'center'}, 
 					{display : 'Supplier Name',name : 'supplier_name',width : 158,sortable : true,align : 'center'},
 					{display : 'Supplier Description',name : 'supplier_name',	width :170,sortable : false,align : 'center'},
 					{display : 'Supplier Address',name : 'supplier_address',	width :172,sortable : false,align : 'center'},
@@ -28,8 +28,8 @@
 					{separator : true},
 				],
 				searchitems : [ 
-					{display : 'Product Code',name : 'product_code'}, 
-					{display : 'Product Name',name : 'product_name',isdefault : true}
+					{display : 'Supplier Code',name : 'supplier_code'}, 
+					// {display : 'Supplier Name',name : 'supplier_name',isdefault : true}
 				],
 				sortname : "supplier_id",
 				sortorder : "desc",

@@ -19,7 +19,7 @@
 					{display : 'Item Description',name : 'item_description',width : 138,sortable : false,	align : 'left',hide : false}, 
 					{display : 'Item Cost',name : 'item_price',	width : 75,sortable : true,align : 'center'},
 					{display : 'Measure',name : 'measure',	width : 75,sortable : false,align : 'center'},
-					{display : 'Quantity',name : 'item_qty',	width : 75,sortable : true,align : 'center'},
+					{display : 'Quantity',name : 'item_qty',	width : 75,sortable : false,align : 'center'},
 					{display : 'Total',name : 'product_name',	width : 75,sortable : false,align : 'center'}
 				],
 				buttons : [ 
@@ -32,7 +32,7 @@
 				],
 				searchitems : [ 
 					{display : 'Item Code',name : 'item_code'}, 
-					{display : 'Item Name',name : 'item_name',isdefault : true}
+					// {display : 'Item Name',name : 'item_name',isdefault : true}
 				],
 				sortname : "costing_no",
 				sortorder : "desc",

@@ -10,11 +10,11 @@
 				url :'action/display_buyers.php',
 				dataType : 'json',
 				colModel :[ 
-					{display : 'Buyer',name : 'buyer_code',width : 148,sortable : false,align : 'center'}, 
+					{display : 'Buyer',name : 'buyer_code',width : 148,sortable : true,align : 'center'}, 
 					{display : 'Contact Details',name : 'buyer_contact',width : 155,sortable : true,align : 'center'}, 
 					{display : 'Address',name : 'buyer_address',width : 193,sortable : true,align : 'left'},
 					{display : 'Date Updated',name : 'date_updated',width : 128,sortable : false,	align : 'left',hide : false}, 
-					{display : 'Status',name : 'buyer_status',	width : 115,sortable : false,align : 'center'}
+					{display : 'Status',name : 'buyer_status',	width : 115,sortable : true,align : 'center'}
 				],
 				buttons : [ 
 					{name : 'Add',bclass :'add',onpress : action_performa},
@@ -28,7 +28,7 @@
 					{display : 'Buyer',name : 'buyer_code',isdefault : true}, 
 					{display : 'Status',name : 'buyer_status'}
 				],
-				sortname : "id",
+				sortname : "buyer_code",
 				sortorder : "desc",
 				usepager : true,
 				resizable: false,

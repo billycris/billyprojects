@@ -15,7 +15,7 @@
 				colModel :[ 
 					{display : 'BX NO',name : 'p_bx_no',width : 81,sortable : false,align : 'center'}, 
 					{display : 'Item Code',name : 'p_item_code',width : 117,sortable : true,align : 'center'},
-					{display : 'Color',name : 'p_color',	width :157,sortable : false,align : 'center'},
+					{display : 'Color',name : 'p_color',	width :157,sortable : true,align : 'center'},
 					{display : 'No. per/bag',name : 'p_no_bag',	width :128,sortable : false,align : 'center'},
 					{display : 'QTY pcs/bag',name : 'p_pcs_bag',	width :92,sortable : false,align : 'center'},
 					{display : 'Total',name : 'total',	width :79,sortable : false,align : 'center'},
@@ -116,6 +116,8 @@
 			}
 		},
 		clear_fields:function(){
+			$("#c_add_save").hide();
+			$("#c_update_save").hide();
 			$("#a_icode").val("");
 			$("#a_pcolor").val("");
 			$("#a_no_per_bag").val("");

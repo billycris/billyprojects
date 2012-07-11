@@ -14,11 +14,11 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 				url :'action/display_payables.php',
 				dataType : 'json',
 				colModel :[ 
-					{display : 'Supplier',name : 'product_photo',width : 150,sortable : false,align : 'center'}, 
-					{display : 'Details',name : 'product_code',width : 150,sortable : true,align : 'center'}, 
-					{display : 'Payable Amount',name : 'product_name',width : 150,sortable : true,align : 'center'},
-					{display : 'Total Amount',name : 'product_name',width : 150,sortable : true,align : 'center'},
-					{display : 'Invoice Date',name : 'item_description',width : 150,sortable : false,	align : 'center',hide : false}, 
+					{display : 'Supplier',name : 'supplier_name',width : 150,sortable : true,align : 'center'}, 
+					{display : 'Details',name : 'payable_details',width : 150,sortable : true,align : 'center'}, 
+					{display : 'Payable Amount',name : 'payable_amount',width : 150,sortable : true,align : 'center'},
+					{display : 'Total Amount',name : 'pn_total_amount',width : 150,sortable : true,align : 'center'},
+					{display : 'Invoice Date',name : 'invoice_date',width : 150,sortable : false,	align : 'center',hide : false}, 
 					// {display : 'Actual Date Received',name : 'product_name',width : 150,sortable : false,align : 'center'},
 					// {display : 'Status',name : 'product_name',	width : 150,sortable : false,align : 'center'},
 				],
@@ -30,10 +30,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 					{name : 'Delete',bclass :'delete',onpress : action_payPayables}, 
 					{separator : true},
 				],
-				searchitems : [ 
-					{display : 'Code',name : 'product_code'}, 
-					{display : 'Product Name',name : 'product_name',isdefault : true}
-				],
+				// searchitems : [ 
+					// {display : 'Supplier',name : 'supplier_name'}, 
+					// {display : 'Product Name',name : 'product_name',isdefault : true}
+				// ],
 				sortname : "payables_no ",
 				sortorder : "asc",
 				usepager : true,

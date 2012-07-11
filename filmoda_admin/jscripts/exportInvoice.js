@@ -14,10 +14,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 				url :'action/display_export_invoice.php',
 				dataType : 'json',
 				colModel :[ 
-					{display : 'Bouyer',name : 'item_no',width : 108,sortable : true,align : 'center'}, 
-					{display : 'Product Code',name : 'item_photo',width : 268,sortable : false,align : 'center'}, 
-					{display : 'Product Name.',name : 'item_name',width : 134,sortable : false ,align : 'left'},
-					{display : 'Date',name : 'item_description',width : 138,sortable : false,	align : 'left',hide : false},
+					{display : 'Buyer',name : 'buyer_name',width : 108,sortable : true,align : 'center'}, 
+					{display : 'Product Code',name : 'product_code',width : 268,sortable : true,align : 'center'}, 
+					{display : 'Product Name',name : 'product_name',width : 134,sortable : true ,align : 'left'},
+					{display : 'Date',name : 'ex_date',width : 138,sortable : false,	align : 'left',hide : false},
 					{display : 'Download',name : 'item_retail_price',	width : 100,sortable : false,align : 'center'},
 				],
 				buttons : [ 
@@ -31,8 +31,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 					// {separator : true},
 				],
 				searchitems : [ 
-					{display : 'Item Name',name : 'item_name'}, 
-					{display : 'Item No',name : 'item_no',isdefault : true}
+					{display : 'Product Name',name : 'product_name'}, 
+					{display : 'Product Code',name : 'product_code',isdefault : true}
 				],
 				sortname : "ex_id",
 				sortorder : "desc",
