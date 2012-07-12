@@ -10,6 +10,10 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_payPayables:function(){
+			$("#li-accounting").attr("class", "active");
+			//$("#ul-accounting").attr("class", "mws-nav-ul");
+			$("#li-payment-payables").attr("class", "mws-nav-selected");
+			//$("#li-payment-payables").attr("style", "border-top: 0 none;");
 			$("#tbl_payPayables").flexigrid({
 				url :'action/display_payables.php',
 				dataType : 'json',
@@ -18,7 +22,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 					{display : 'Details',name : 'payable_details',width : 150,sortable : true,align : 'center'}, 
 					{display : 'Payable Amount',name : 'payable_amount',width : 150,sortable : true,align : 'center'},
 					{display : 'Total Amount',name : 'pn_total_amount',width : 150,sortable : true,align : 'center'},
-					{display : 'Invoice Date',name : 'invoice_date',width : 150,sortable : false,	align : 'center',hide : false}, 
+					{display : 'Invoice Date',name : 'invoice_date',width : 150,sortable : false,	align : 'center',hide : false} 
 					// {display : 'Actual Date Received',name : 'product_name',width : 150,sortable : false,align : 'center'},
 					// {display : 'Status',name : 'product_name',	width : 150,sortable : false,align : 'center'},
 				],
@@ -28,7 +32,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 					{name : 'Edit',bclass :'edit',onpress : action_payPayables}, 
 					{separator : true},
 					{name : 'Delete',bclass :'delete',onpress : action_payPayables}, 
-					{separator : true},
+					{separator : true}
 				],
 				// searchitems : [ 
 					// {display : 'Supplier',name : 'supplier_name'}, 
@@ -83,7 +87,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 									}else{
 										alert(d.m);
 									}
-								},
+								}
 							});
 						}else{
 							alert('Please select data from the table.');

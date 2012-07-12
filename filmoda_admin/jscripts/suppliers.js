@@ -9,6 +9,8 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_production:function(){
+			$("#li-suppliers").attr("class", "active mws-nav-selected");
+			$("#li-suppliers").attr("style", "border-top: 0 none");
 			$("#tbl_supplier").flexigrid({
 				url :'action/display_suppliers.php',
 				dataType : 'json',
@@ -17,7 +19,7 @@
 					{display : 'Supplier Name',name : 'supplier_name',width : 158,sortable : true,align : 'center'},
 					{display : 'Supplier Description',name : 'supplier_name',	width :170,sortable : false,align : 'center'},
 					{display : 'Supplier Address',name : 'supplier_address',	width :172,sortable : false,align : 'center'},
-					{display : 'Supplier Tel. No.',name : 'supplier_telno',	width :114,sortable : false,align : 'center'},
+					{display : 'Supplier Tel. No.',name : 'supplier_telno',	width :114,sortable : false,align : 'center'}
 				],
 				buttons : [ 
 					{name : 'Add',bclass :'add',onpress : action_suppliers},
@@ -25,10 +27,10 @@
 					{name : 'Edit',bclass :'edit',onpress : action_suppliers}, 
 					{separator : true},
 					{name : 'Delete',bclass :'delete',onpress : action_suppliers}, 
-					{separator : true},
+					{separator : true}
 				],
 				searchitems : [ 
-					{display : 'Supplier Code',name : 'supplier_code'}, 
+					{display : 'Supplier Code',name : 'supplier_code'} 
 					// {display : 'Supplier Name',name : 'supplier_name',isdefault : true}
 				],
 				sortname : "supplier_id",
@@ -144,7 +146,7 @@
 							sname	: sname,
 							sdesc	: sdesc,
 							saddr	: saddr,
-							stels	: stels,
+							stels	: stels
 						},
 						dataType:'json',
 						success:function(d){
@@ -185,7 +187,7 @@
 							sname	: sname,
 							sdesc	: sdesc,
 							saddr	: saddr,
-							stels	: stels,
+							stels	: stels
 						},
 						dataType:'json',
 						success:function(d){
@@ -204,7 +206,7 @@
 					});
 				}
 			});
-		},
+		}
 		
 		/*
 		ajaxPOSTRequest:function(ResourceURL, Data, CallBackOnSuccess, CallBackOnError){

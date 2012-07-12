@@ -11,6 +11,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 			$(".numeric").numeric({allow:"."});
 		},
 		display_purchasing:function(){
+			$("#li-purchasing").attr("class", "active mws-nav-selected");
+			$("#li-purchasing").attr("style", "border-top: 0 none");
 			$("#tbl_purchasing").flexigrid({
 				url :'action/display_purchasing.php',
 				dataType : 'json',

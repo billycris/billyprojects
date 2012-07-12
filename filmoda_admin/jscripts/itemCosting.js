@@ -9,6 +9,8 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_item_costing:function(){
+			$("#li-item-costing").attr("class", "active mws-nav-selected");
+			$("#li-item-costing").attr("style", "border-top: 0 none");
 			$("#tbl_item_costing").flexigrid({
 				url :'action/display_item_cost.php',
 				dataType : 'json',

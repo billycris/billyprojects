@@ -9,6 +9,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 		},
 		
 		display_performa:function(){
+			$("#li-proforma-invoice").attr("class", "active mws-nav-selected");
+			$("#li-proforma-invoice").attr("style", "border-top: 0 none");
 			$("#tbl_perfoma").flexigrid({
 				url :'action/display_proforma_invoice.php',
 				dataType : 'json',
