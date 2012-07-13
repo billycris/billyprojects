@@ -9,6 +9,7 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_item_costing:function(){
+			$("#item_costing").attr('class','active');
 			$("#tbl_item_costing").flexigrid({
 				url :'action/display_item_cost.php',
 				dataType : 'json',

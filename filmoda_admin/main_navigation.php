@@ -5,7 +5,7 @@
                 	<li class="active" id="dashboard"><a href="dashboard.php" class="mws-i-24 i-home">Dashboard</a></li>
                 	<!--li><a href="products.php" class="mws-i-24 i-chart">Item Listing</a></li-->
                 	<li id="item_listing"><a href="item_listing.php" class="mws-i-24 i-chart">Item Listing</a></li>
-                	<li><a href="costing.php" class="mws-i-24 i-day-calendar">Item Costing</a></li>
+                	<li id="item_costing"><a href="costing.php" class="mws-i-24 i-day-calendar">Item Costing</a></li>
                 	<li><a href="purchasing.php" class="mws-i-24 i-file-cabinet">Purchasing / Bulking</a></li>
                 	<li><a href="proforma_invoice.php" class="mws-i-24 i-table-1">Proforma Invoice</a></li>
                 	<li>
