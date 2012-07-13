@@ -6,6 +6,8 @@
 		},
 		
 		display_buyers:function(){
+			$("#li-buyers").attr("class", "active mws-nav-selected");
+			$("#li-buyers").attr("style", "border-top: 0 none");
 			$("#tbl_buyers").flexigrid({
 				url :'action/display_buyers.php',
 				dataType : 'json',

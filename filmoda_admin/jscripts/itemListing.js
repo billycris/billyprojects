@@ -9,7 +9,12 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_item_listing:function(){
+<<<<<<< HEAD
 			$("#item_listing").attr('class','active');
+=======
+			$("#li-item-listing").attr("class", "active mws-nav-selected");
+			$("#li-item-listing").attr("style", "border-top: 0 none");
+>>>>>>> ecd37975192349acf3a6c5b2f6a5eaed792429cf
 			$("#tble_itemlisting").flexigrid({
 				url :'action/display_item_list.php',
 				dataType : 'json',
@@ -28,7 +33,7 @@
 					{name : 'Edit',bclass :'edit',onpress : action_item_list}, 
 					{separator : true},
 					{name : 'Delete',bclass :'delete',onpress : action_item_list}, 
-					{separator : true},
+					{separator : true}
 				],
 				searchitems : [ 
 					{display : 'Item Name',name : 'item_name'}, 
@@ -168,7 +173,7 @@
 							// i_num   : i_num,
 							i_name	: i_name,
 							p_code	: p_code,
-							i_desc	: i_desc,
+							i_desc	: i_desc
 							// i_irl	: i_irl,
 							// i_isl	: i_isl,
 							// i_ibl	: i_ibl,
@@ -233,7 +238,7 @@
 							// i_iwsp	: i_iwsp,
 							// i_idp	: i_idp,
 							// i_bcode	: i_bcode,
-							pPhoto	: pPhoto,
+							pPhoto	: pPhoto
 						},
 						dataType:'json',
 						success:function(d){
@@ -277,7 +282,7 @@
 				$("#a_add_save").hide();
 				$("#a_update_save").hide();
 			});
-		},
+		}
 	}
 })(jQuery);
 jQuery(document).ready(function(){ jQuery.itemListing.init(); });

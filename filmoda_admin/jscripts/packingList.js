@@ -9,6 +9,8 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_packingList:function(){
+			$("#li-packing-list").attr("class", "active mws-nav-selected");
+			$("#li-packing-list").attr("style", "border-top: 0 none");
 			$("#tbl_pack_list").flexigrid({
 				url :'action/display_packing_list.php',
 				dataType : 'json',

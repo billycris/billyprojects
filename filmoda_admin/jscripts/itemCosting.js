@@ -9,7 +9,12 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_item_costing:function(){
+<<<<<<< HEAD
 			$("#item_costing").attr('class','active');
+=======
+			$("#li-item-costing").attr("class", "active mws-nav-selected");
+			$("#li-item-costing").attr("style", "border-top: 0 none");
+>>>>>>> ecd37975192349acf3a6c5b2f6a5eaed792429cf
 			$("#tbl_item_costing").flexigrid({
 				url :'action/display_item_cost.php',
 				dataType : 'json',

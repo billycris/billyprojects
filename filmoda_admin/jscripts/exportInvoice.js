@@ -10,6 +10,8 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_exportInvoice:function(){
+			$("#li-export-invoice").attr("class", "active mws-nav-selected");
+			$("#li-export-invoice").attr("style", "border-top: 0 none");
 			$("#tbl_export_invoice").flexigrid({
 				url :'action/display_export_invoice.php',
 				dataType : 'json',

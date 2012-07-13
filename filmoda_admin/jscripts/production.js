@@ -1,6 +1,6 @@
 ;(function($){
 	$.production= {
-	
+		
 		init:function(){
 			this.display_production();
 			this.alphaNum();
@@ -265,6 +265,8 @@
 			
 		},
 		display_production:function(){
+			$("#li-production-data").attr("class", "active mws-nav-selected");
+			$("#li-production-data").attr("style", "border-top: 0 none");
 			$("#tbl_production_data").flexigrid({
 				url :'action/display_products.php',
 				dataType : 'json',
