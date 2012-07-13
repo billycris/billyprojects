@@ -1,0 +1,77 @@
+==Item LIsting==
+FORM: add/edit/delete items/  
+
+Changes: 1, 2, 3 == to determine the revisions
+Buyer Code:
+Product Name:
+ Raw Materials:
+     Item no:
+     Item Picture:
+     Item Description:
+     Item Row Location:
+     Item Shelf Location:
+     Item Bin Location:
+     Item Retail Price:
+     Item Whole Sale Price:
+     Item Dealer Price:
+
+   Add Search
+
+
+==Costing==
+     -- add cost per material
+  Quantity per Product--raw materials/composition of the product
+
+==Purchasing==
+     -- add/edit/delete purchase
+ 
+  material name
+  purchase where??
+  price
+  old prices changes--
+  purchase datetime
+  receiving datetime
+
+ list of suppliers of certain item code/material
+  history of purchases
+
+==Proforma Invoice== can be printed
+ 
+  Shipment Date
+  Ordered Date
+  Items
+  Price
+  Discounting Price == Percentage
+  Buyer Code
+  Buyer Name
+  Address
+
+==Acccounting==
+  Payment Receivables -- per product/client
+
+  Payment Payables
+      -- suppliers (historical tracking)  -- status (pending, freeze, on going 
+                                          -- due date
+                                          
+          Supplier (Cash advances, charges)
+
+
+==Production Data==
+  like proforma invoice--
+  production head/maker
+  target deliverable date
+  target start date
+  buyer code
+  quantity ordered
+  product description
+  item code
+  photo
+
+==Export Invoice==
+   Date printed
+
+==Packing List==
+
+==Reports==
+
+

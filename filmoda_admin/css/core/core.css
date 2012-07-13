@@ -48,17 +48,7 @@ div#mws-header
 	-khtml-box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
 	box-shadow:0 2px 2px rgba(0, 0, 0, 0.35);
 }
-.search-bar
-{
-	font-family:Tahoma, Arial, Helvetica, sans-serif;
-	color:#666666;
-	font-size:1.5em;
-	height:58px;
-	z-index:1;
-	position:absolute;
-	top:0; left:0; right:0;
-	background:#D7D7D7;
-}
+
 div#mws-logo-container
 {
 	width:180px;

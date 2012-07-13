@@ -9,12 +9,8 @@
 			$('.numeric').numeric({allow:'.'});
 		},
 		display_item_listing:function(){
-<<<<<<< HEAD
-			$("#item_listing").attr('class','active');
-=======
 			$("#li-item-listing").attr("class", "active mws-nav-selected");
 			$("#li-item-listing").attr("style", "border-top: 0 none");
->>>>>>> ecd37975192349acf3a6c5b2f6a5eaed792429cf
 			$("#tble_itemlisting").flexigrid({
 				url :'action/display_item_list.php',
 				dataType : 'json',
