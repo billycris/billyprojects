@@ -5,7 +5,7 @@ if(isset($is_ajax) && $is_ajax)
 {
 	$host="localhost"; // Host name
 	$username="root"; // Mysql username
-	$password="@jumpsite123"; // Mysql password
+	$password=""; // Mysql password
 	$db_name="filmoda"; // Database name
 	$tbl_name="users"; // Table name
 

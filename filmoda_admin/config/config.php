@@ -6,7 +6,7 @@
 	
 	$db['default']['hostname'] = "localhost";
 	$db['default']['username'] = "root";
-	$db['default']['password'] = "@jumpsite123";
+	$db['default']['password'] = "";
 	$db['default']['database'] = "filmoda";
 
 	$db['live']['hostname'] = 'localhost';

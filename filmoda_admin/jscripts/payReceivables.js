@@ -15,7 +15,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 			$("#ul-accounting").attr("class", "mws-nav-ul");
 			//$("#ul-accounting").attr("style", "border-top: 0 none;");
 			$("#li-payment-receivables").attr("class", "mws-nav-selected");
-			//$("#li-payment-receivables").attr("style", "border-top: 0 none;");
+			$("#li-payment-receivables").attr("style", "border-bottom: 1px solid #535755;");
 			$("#tbl_pay_receivables").flexigrid({
 				url :'action/display_pay_receivables.php',
 				dataType : 'json',

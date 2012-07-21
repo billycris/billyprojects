@@ -111,30 +111,34 @@
 								</div-->
 								<div style="clear:both;"></div>
 							</fieldset>
-							<div style="float: right;margin-top: -170px;border-radius:7px; background-color: white; padding: 20px; width:250px;margin-right:30px;">
-								<fieldset id="fieldset" style="text-align:center;border: 1px solid gray; border-radius:7px; background-color: white; padding: 20px;">
-									<div>
-										<img src="images/no_image.jpg" id="a_pdimage" style="width:200px; height:220px;"/>
-									</div>
-								</fieldset>
-								<?php
-									include_once('uploadphoto.php');
-								?>
-								<!--div style="text-align:center;">
-									<input type="file" name="a_photo" id="a_photo" />
-								</div-->
-							</div>
-							<div class="mws-button-row" style="float:right;margin:220px -350px 0px 0;">
-								<input style="margin:10px 7px 0 0;" class="mws-button red left" id="a_cancel_save" type="submit" value="Cancel"/>
-								<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_add_save" type="submit" value="Save"/>
-								<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_update_save" type="submit" value="Save"/>
-							</div>
+							
+								<div style="float: right;margin-top: -170px;border-radius:7px; background-color: white; padding: 20px; width:250px;margin-right:30px;">
+									<fieldset id="fieldset" style="text-align:center;border: 1px solid gray; border-radius:7px; background-color: white; padding: 20px;">
+										<div id="result">
+											<img src="images/no_image.jpg" id="a_pdimage" style="width:200px; height:220px;"/>
+										</div>
+									</fieldset>
+								<form method="POST" action="" enctype="multipart/form-data">
+									<?php
+										include_once('uploadphoto.php');
+									?>
+									<!--div style="text-align:center;">
+										<input type="file" name="a_photo" id="a_photo" />
+									</div-->
+								</div>
+								<div class="mws-button-row" style="float:right;margin:220px -350px 0px 0;">
+									<input style="margin:10px 7px 0 0;" class="mws-button red left" id="a_cancel_save" type="submit" value="Cancel"/>						
+									<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_add_save" type="submit" value="Save"/>
+								</form>
+									<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_update_save" type="submit" value="Save"/>
+								</div>
+							
 						</fieldset>
 					</div>
 					<div class="item_listing" style="display:block;">
 						<table id="tble_itemlisting"></table>
 					</div>
                 </div>
-                
+
 <script type='text/javascript' src='<?php echo $base_url; ?>/jscripts/itemListing.js'></script>
              <?php include_once "footer.php"; ?>

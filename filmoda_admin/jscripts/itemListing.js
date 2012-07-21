@@ -156,7 +156,7 @@
 				// var i_bcode = $("#a_buyercode").val();
 				// var i_photo = $("#a_photo").val();
 				
-				// var pPhoto = 'no_image.jpg';
+				//var pPhoto = 'no_image.jpg';
 				if(a_icode.length < 1 || i_name.length < 1){
 					alert('Please fill up all required fields.');
 				}else{
@@ -211,8 +211,8 @@
 				// var i_iwsp = $("#a_iwsp").val();
 				// var i_idp = $("#a_idp").val();
 				// var i_bcode = $("#a_buyercode").val();
-				var i_photo = $("#a_photo").val();
-				// alert(p_code);
+				var a_photo = $("#file-input").val();
+				console.log(a_photo);
 				var pPhoto = 'no_image.jpg';
 				if(a_icode.length < 1 || i_name.length < 1){
 					alert('Please fill up all required fields.');
@@ -234,7 +234,7 @@
 							// i_iwsp	: i_iwsp,
 							// i_idp	: i_idp,
 							// i_bcode	: i_bcode,
-							pPhoto	: pPhoto
+							pPhoto	: a_photo
 						},
 						dataType:'json',
 						success:function(d){
@@ -252,6 +252,7 @@
 						}	
 					});
 				}
+				return false;
 			});
 		},
 		clear_fields:function(){
@@ -277,6 +278,8 @@
 				$("div.item_listing").show();
 				$("#a_add_save").hide();
 				$("#a_update_save").hide();
+				
+				return false;
 			});
 		}
 	}
