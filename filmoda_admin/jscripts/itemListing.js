@@ -252,7 +252,7 @@
 						}	
 					});
 				}
-				return false;
+				//return false;
 			});
 		},
 		clear_fields:function(){
@@ -279,7 +279,7 @@
 				$("#a_add_save").hide();
 				$("#a_update_save").hide();
 				
-				return false;
+				//return false;
 			});
 		}
 	}
