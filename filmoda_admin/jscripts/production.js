@@ -443,13 +443,13 @@
 				var pname = $("#a_pname").val();
 				var pdesc = $("#a_pdesc").val();
 				var pcost = $("#a_pcost").val();
-				// var pPhoto = $("#a_photo").val();
-				var pPhoto = 'no_image.jpg';	
+				var pPhoto = $("#filename").val();
+				//var pPhoto = 'no_image.jpg';	
 				if(pname.length < 1 || pcost.length < 1 || pcode.length < 1){
 					alert('Please fill up all required fields.');
 				}else{
 					$.ajax({
-						type:'GET',
+						type:'POST',
 						url:'action/add_new_products.php',
 						data:{
 							pcode	: pcode,

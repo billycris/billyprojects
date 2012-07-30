@@ -4,7 +4,6 @@
 	
 	// $prod_code 	= isset($_POST['prod_code']) ? $_POST['prod_code'] : ""; 
 ?>
-    
     <div id="mws-wrapper">
 		<div id="mws-sidebar-stitch"></div>
 		<div id="mws-sidebar-bg"></div>
@@ -108,17 +107,15 @@
 								</div>
 								<div style="float: left; margin-top: 10px;">
 									<input type="text" class="numeric" name="a_buyercode" id="a_buyercode" size="30"/>
-								</div-->
-								<div style="clear:both;"></div>
+								</div>
+								<div style="clear:both;"></div-->
 							</fieldset>
-							
 								<div style="float: right;margin-top: -170px;border-radius:7px; background-color: white; padding: 20px; width:250px;margin-right:30px;">
 									<fieldset id="fieldset" style="text-align:center;border: 1px solid gray; border-radius:7px; background-color: white; padding: 20px;">
 										<div id="result">
 											<img src="images/no_image.jpg" id="a_pdimage" style="width:200px; height:220px;"/>
 										</div>
 									</fieldset>
-
 									<?php
 										include_once('uploadphoto.php');
 									?>
@@ -129,7 +126,6 @@
 								<div class="mws-button-row" style="float:right;margin:220px -350px 0px 0;">
 									<input style="margin:10px 7px 0 0;" class="mws-button red left" id="a_cancel_save" type="submit" value="Cancel"/>						
 									<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_add_save" type="submit" value="Save"/>
-
 									<input style="margin:10px 100px 0 0; display:none;" class="mws-button green" id="a_update_save" type="submit" value="Save"/>
 								</div>
 							

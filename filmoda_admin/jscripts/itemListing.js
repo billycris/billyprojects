@@ -142,21 +142,11 @@
 		},
 		update_save:function(item_id){
 			$("div.mws-button-row").find('#a_update_save').unbind('click').click(function(){
-				// var a_refn = $("#a_refn").val();
 				var a_icode = $("#a_icode").val();
 				var i_name = $("#a_iname").val();
 				var p_code = $("#p_code").val();
 				var i_desc = $("#a_idesc").val();
-				// var i_irl = $("#a_irl").val();
-				// var i_isl = $("#a_isl").val();
-				// var i_ibl = $("#a_ibl").val();
-				// var i_irp = $("#a_irp").val();
-				// var i_iwsp = $("#a_iwsp").val();
-				// var i_idp = $("#a_idp").val();
-				// var i_bcode = $("#a_buyercode").val();
-				// var i_photo = $("#a_photo").val();
 				
-				//var pPhoto = 'no_image.jpg';
 				if(a_icode.length < 1 || i_name.length < 1){
 					alert('Please fill up all required fields.');
 				}else{
@@ -166,18 +156,9 @@
 						data:{
 							item_id  : item_id,
 							a_icode  : a_icode,
-							// i_num   : i_num,
 							i_name	: i_name,
 							p_code	: p_code,
 							i_desc	: i_desc
-							// i_irl	: i_irl,
-							// i_isl	: i_isl,
-							// i_ibl	: i_ibl,
-							// i_irp	: i_irp,
-							// i_iwsp	: i_iwsp,
-							// i_idp	: i_idp,
-							// i_bcode	: i_bcode,
-							// pPhoto	: pPhoto,
 						},
 						dataType:'json',
 						success:function(d){
@@ -200,18 +181,9 @@
 		add_save:function(){
 			$("div.mws-button-row").find('#a_add_save').unbind('click').click(function(){
 				var a_icode = $("#a_icode").val();
-				// var p_code = $("#p_code").val();
 				var i_name = $("#a_iname").val();
-				// var p_code = $("#a_pcode").val();
 				var i_desc = $("#a_idesc").val();
-				// var i_irl = $("#a_irl").val();
-				// var i_isl = $("#a_isl").val();
-				// var i_ibl = $("#a_ibl").val();
-				// var i_irp = $("#a_irp").val();
-				// var i_iwsp = $("#a_iwsp").val();
-				// var i_idp = $("#a_idp").val();
-				// var i_bcode = $("#a_buyercode").val();
-				var a_photo = $("#file-input").val();
+				var a_photo = $("#filename").val();
 				console.log(a_photo);
 				var pPhoto = 'no_image.jpg';
 				if(a_icode.length < 1 || i_name.length < 1){
@@ -221,19 +193,9 @@
 						type:'POST',
 						url:'action/add_new_item.php',
 						data:{
-							// a_refn  : a_refn,
-							// i_num   : i_num,
 							a_icode	: a_icode,
 							i_name	: i_name,
-							// p_code	: p_code,
 							i_desc	: i_desc,
-							// i_irl	: i_irl,
-							// i_isl	: i_isl,
-							// i_ibl	: i_ibl,
-							// i_irp	: i_irp,
-							// i_iwsp	: i_iwsp,
-							// i_idp	: i_idp,
-							// i_bcode	: i_bcode,
 							pPhoto	: a_photo
 						},
 						dataType:'json',
@@ -252,7 +214,6 @@
 						}	
 					});
 				}
-				//return false;
 			});
 		},
 		clear_fields:function(){
@@ -278,8 +239,6 @@
 				$("div.item_listing").show();
 				$("#a_add_save").hide();
 				$("#a_update_save").hide();
-				
-				//return false;
 			});
 		}
 	}
